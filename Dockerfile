@@ -1,4 +1,5 @@
 FROM node:18.15-alpine3.17
+RUN npm install -g @angular/cli@15.2.4
 RUN addgroup app && adduser -S -G app app
 USER app
 WORKDIR /app
