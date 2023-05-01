@@ -8,4 +8,4 @@ COPY . .
 ENV API_PATH=http://api.localhost
 EXPOSE 4200 
 # CMD ["npm", "start"] 
-ENTRYPOINT [ "npm", "start"]
+ENTRYPOINT [ "ng", "serve", "--host", "0.0.0.0", "--disable-host-check"]
