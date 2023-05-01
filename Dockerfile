@@ -4,6 +4,7 @@ RUN npm install -g @angular/cli@15.2.4
 # USER app
 # RUN npm install -g npm@9.6.5
 WORKDIR /app
+RUN mkdir data
 COPY package*.json .
 RUN npm install
 
